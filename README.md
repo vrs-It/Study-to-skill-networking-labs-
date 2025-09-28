@@ -39,8 +39,6 @@ Because the destination is on the **same subnet**, Computer 1 does not send traf
 
 If Computer 2’s IP had been in a different subnet (for example, `192.168.1.x` or `172.16.1.x`), then Computer 1 would have forwarded the packet to Router Y to handle inter-network routing.  
 
-### Final Answer  
-Computer 2 is located on **Network A**, and the traffic stays **local to that subnet** without leaving through the router.
 
 Simplfied Step by step
 1. **Check the IP address of Computer 2:** `10.1.1.10`  
