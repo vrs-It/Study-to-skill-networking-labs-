@@ -52,14 +52,5 @@ This lab was completed during my **CompTIA Network+ studies** as part of hands-o
 
 ---
 
-## 📊 (Optional) Visual Diagram
 
-Here’s a simple **MermaidJS diagram** (GitHub renders this automatically):
-
-```mermaid
-graph LR
-    A[Network A 10.1.1.0/24] --- RY[Router Y]
-    RY --- B[Network B 192.168.1.0/24]
-    B --- RZ[Router Z]
-    RZ --- C[Network C 172.16.1.0/24]
 ![Network Diagram](https://github.com/user-attachments/assets/1096fc7c-f723-4a85-ae68-9a485e39f30d)
