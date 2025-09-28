@@ -27,7 +27,22 @@ This lab was completed during my **CompTIA Network+ studies** as part of hands-o
 ---
 
 ## 📝 Step-by-Step Reasoning
+I came to the conclusion of the answer by analyzing the traffic and where it's going: 
+## 📝 Explanation (Traffic Analysis Approach)
 
+When Computer 1 (`10.1.1.8`) wants to send a packet to Computer 2 (`10.1.1.10`), the first step is to check whether the destination IP is in the same subnet.  
+
+- **Subnet of Network A:** `10.1.1.0/24` → valid host range: `10.1.1.1 – 10.1.1.254`  
+- Both Computer 1 (`10.1.1.8`) and Computer 2 (`10.1.1.10`) fall within this range.  
+
+Because the destination is on the **same subnet**, Computer 1 does not send traffic to the default gateway (Router Y). Instead, it communicates **directly with Computer 2** using ARP to resolve the MAC address.  
+
+If Computer 2’s IP had been in a different subnet (for example, `192.168.1.x` or `172.16.1.x`), then Computer 1 would have forwarded the packet to Router Y to handle inter-network routing.  
+
+### Final Answer  
+Computer 2 is located on **Network A**, and the traffic stays **local to that subnet** without leaving through the router.
+
+Simplfied Step by step
 1. **Check the IP address of Computer 2:** `10.1.1.10`  
 2. **Match against subnet ranges:**  
    - Network A = `10.1.1.0/24` → valid range `10.1.1.1 – 10.1.1.254`  
